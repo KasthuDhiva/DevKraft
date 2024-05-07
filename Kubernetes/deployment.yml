@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devkraft
+  labels:
+    app: devkraft
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: devkraft
+  template:
+    metadata:
+      labels:
+        app: devkraft
+    spec:
+      containers:
+      - name: devkraft
+        image: kasthurir/devkraft:latest
+        ports:
+        - containerPort: 1213
