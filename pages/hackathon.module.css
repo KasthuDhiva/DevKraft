@@ -1,0 +1,153 @@
+.bodyContainer {
+  padding: 20px;
+  margin-top: 20px;
+}
+.projectContainer {
+  margin-top: 50px;
+
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+.galleryItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.galleryItem:hover {
+  transform: translateY(-10px);
+}
+.blockWrapperLink {
+  text-decoration: none;
+  font-family: 'Cabin', sans-serif; /* Changed font family */
+  color: #333; /* Changed font color */
+  font-size: 16px; /* Changed font size */
+}
+.softwareEntry {
+  position: relative;
+  opacity: 1; /* Ensure it's fully visible */
+  visibility: visible; /* Ensure it's visible */
+  transition: opacity 0.3s ease-in-out; /* Add fade transition */
+}
+.hackathonEntry {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  box-shadow: 4px 4px 10px 0px rgba(18, 18, 18, 0.1);
+}
+
+.hackathonThumbnail {
+  width: 350px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+  border: 4px rgb(246, 246, 246) solid;
+}
+
+.hackathonDetails {
+  display: flex;
+  margin-left: 50px;
+  margin-right: 20px;
+  flex-direction: column;
+  width: 950px;
+}
+.hackathonName {
+  padding-left: 10px;
+  font-size: 1.8em;
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: 'Cabin', sans-serif;
+}
+
+.detailsRow {
+  display: flex;
+  flex-wrap: wrap;
+ 
+  justify-content: space-around;
+  width: 100%;
+}
+
+.detailsRow1 {
+  display: flex;
+  align-items: flex-start;
+ 
+  font-family: 'Cabin', sans-serif;
+  
+}
+.detailsColumn1 {
+  display: flex;
+  flex: 1 1 25%;
+  align-items: flex-start;
+  font-family: 'Cabin', sans-serif;
+  flex-direction: column;
+}
+.hackathonElement {
+  margin-bottom: 20px;
+  color: #595959;
+}
+.hackathonLocation {
+  margin-bottom: 20px;
+  color: #595959;
+  margin-bottom: 40px;
+}
+.hackathonTimeLeft {
+  color: #fff;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: #105849 1px solid;
+  border-radius: 20px;
+  background-color: #105849;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+.hackathonPrizes {
+  margin-bottom: 20px;
+  color: #595959;
+  margin-top: 70px;
+}
+.hackathonParticipants {
+  margin-bottom: 50px;
+  color: #595959;
+  margin-top: 85px;
+}
+.hackathonTag {
+  background-color: rgba(133, 220, 255, 0.2);
+  color: #0074F0;
+  margin-top: 5px;
+  display: block;
+  padding: 0.5rem 1rem;
+}
+.hackathonSponsor {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #0074F0;
+  border: 1px solid #0074F0;
+  border-radius: 15px;
+  padding: 10px 20px;
+}
+.icon {
+  padding: 10px;
+  width: 24px;
+  height: 24px;
+}
+/* Optional: Media Queries for Responsiveness */
+@media screen and (max-width: 992px) {
+  /* Adjust gallery item width for medium screens (optional) */
+  .galleryItem {
+    width: calc(50% - 20px); /* 2 columns for medium screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Adjust gallery item width for extra small screens */
+  .galleryItem {
+    width: 100%; /* Stack columns on extra small screens */
+  }
+}

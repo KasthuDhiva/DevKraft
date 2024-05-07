@@ -1,0 +1,144 @@
+.headerContainer {
+  width: 100%;
+  margin-top: 3rem; /* Add top margin to separate from the previous section */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeHeader {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between; /* Add this line to the existing .homeHeader class */
+  align-items: center;
+  background-color: #fef8ec;
+  box-shadow: 5px 5px 10px 0px #d4d4d4;
+}
+
+.homeNavbarInteractive {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.homeLogo {
+  color: #216567;
+  font-size: 2em;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: auto; /* Add this line to the existing .homeLogo class */
+}
+
+.homeDesktopMenu {
+  display: flex;
+  align-items: center;
+}
+
+.homeLinks {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 0; /* Add this line to the existing .homeLinks class */
+}
+
+.homeNavItem {
+  color: #216567;
+  font-size: 24px;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration: none;
+  padding-bottom: 6px;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.2s ease;
+  margin-left: 2.8rem; /* Change the margin-left value to increase/decrease the space between nav items */
+  animation-name: slideInUp;
+  animation-duration: 500ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+.homeNavItem:hover,
+.homeNavItem:focus {
+  color: #216567;
+  border-bottom: 3px solid #216567;
+}
+
+/* Add this line to remove the bottom-border-bottom when the hover and focus is removed */
+.homeNavItem:not(:hover):not(:focus) {
+  border-bottom: none;
+}
+.homeButton1 {
+  font-size: 24px;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration: none;
+  margin-left: 2rem;
+  animation-name: slideInUp;
+  animation-duration: 500ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  background-color: #216567;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-width: 1px;
+  border-radius: 4px;
+}
+.homeButton2 {
+  font-size: 24px;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration: none;
+  margin-left: 2rem;
+  animation-name: slideInUp;
+  animation-duration: 500ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  background-color: transparent;
+  border: 2px solid #216567;
+  color: #216567;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-color: #000000;
+  border-width: 1px;
+  border-radius: 4px;
+}
+.homeButton1:hover {
+  background-color: #000000;
+  border: 2px solid #000000;
+  color: #fff;
+}
+.homeButton2:hover {
+  background-color: #000000;
+  color: #fff;
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

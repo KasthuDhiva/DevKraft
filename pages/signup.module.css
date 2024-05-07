@@ -1,0 +1,99 @@
+/* Signup container */
+.signupContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fbf4d5;
+  }
+  
+  /* Signup form */
+  .signupForm {
+    display: flex;
+    flex-direction: column;
+    background-color: #216567;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Signup form title */
+  .signupTitle {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Input field container */
+  .inputField {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  /* Field label */
+.fieldLabel {
+    margin-bottom: 10px;
+    color: #e2bfd1;
+    width: 30%; /* Adjust label width */
+    text-align: left; /* Align label to the left */
+  }
+  
+  /* Input fields */
+  .signupEmailInput,
+  .signupPasswordInput,
+  .signupNameInput {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e2bfd1;
+    color: #216567;
+    border: none;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  /* Signup button */
+  .signupButton {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #94d3c3;
+    color: #fbf4d5;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 60%; /* Adjust button width */
+    margin: 0 auto; /* Center the button */
+  }
+  
+  /* Hover effect on signup button */
+  .signupButton:hover {
+    background-color: #7acdd5;
+  }
+  
+  /* Signup links */
+  .signupLinks {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* Signup links text */
+  .signupLinks p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect on signup links */
+  .signupLinks p:hover {
+    color: #fabc37;
+  }
+  
+  /* Error message */
+  .errorMessage {
+    color: red;
+    margin-bottom: 10px;
+  }
+  

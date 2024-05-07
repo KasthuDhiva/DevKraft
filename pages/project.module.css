@@ -1,0 +1,150 @@
+/* project.module.css */
+
+/* Body container */
+.bodyContainer {
+    padding: 20px;
+    margin-top: 70px;
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Styling for the button */
+.toggleFormBtn {
+  font-family: 'Cabin', sans-serif;
+  background-color: #d36a4f; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 15px 30px; /* Button padding */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Button border radius */
+  cursor: pointer; /* Cursor style on hover */
+  font-size: 20px; /* Button font size */
+  font-weight: 700;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Button box shadow */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.toggleFormBtn:hover {
+  background-color: #ae4429;  /* Button background color on hover */
+}
+
+/* Add project form */
+.addProjectFormContainer {
+  font-family: 'Cabin', sans-serif;
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.addProjectForm {
+  margin-top: 20px;
+  width: 500px;
+  background-color: #fef8ec; /* Change background color to white */
+  border-radius: 10px; /* Increase border radius for a smoother look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  padding: 30px; /* Increase padding for better spacing */
+}
+
+.addProjectForm h2 {
+  margin-bottom: 20px; /* Increase margin for better separation */
+  color: #216567; /* Change text color to a darker shade */
+}
+
+.addProjectForm label {
+  display: block;
+  margin-bottom: 15px; /* Increase margin for better spacing */
+  color:#216567; /* Change label color to a lighter shade */
+}
+
+.addProjectForm input[type="text"],
+.addProjectForm input[type="url"],
+.addProjectForm textarea,
+.addProjectForm input[type="file"] {
+  width: 100%;
+  padding: 12px; /* Increase padding for better input appearance */
+  border: 1px solid #ddd; /* Change border color to a lighter shade */
+  border-radius: 6px; /* Increase border radius for smoother edges */
+  box-sizing: border-box;
+  margin: 20px 0; /* Increase margin for better spacing */
+}
+
+.addProjectForm button[type="submit"] {
+  background-color:  #ae4429;
+  color: #fff;
+  padding: 14px 24px; /* Increase padding for better button appearance */
+  border: none;
+  border-radius: 6px; /* Increase border radius for smoother edges */
+  cursor: pointer;
+  font-size: 18px; 
+  font-weight: 700;/* Increase font size for better readability */
+  transition: background-color 0.3s ease; /* Add smooth transition */
+}
+
+.addProjectForm button[type="submit"]:hover {
+  background-color:  #d36a4f;
+}
+.projectTitle {
+  font-family: 'Cabin', sans-serif;
+  color:  #ae4429;
+}
+  /* Gallery container */
+  .galleryContainer {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four projects in a row */
+    gap: 20px;
+  }
+ /* Updated styles */
+ .galleryItem {
+  background-color: #fff; /* Changed background color */
+  border: 1px solid #eee; /* Adjusted border color */
+  border-radius: 8px; /* Increased border radius */
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added box shadow for depth */
+}
+
+.galleryItem:hover {
+  transform: translateY(-5px);
+}
+
+.blockWrapperLink {
+  text-decoration: none;
+  font-family: 'Cabin', sans-serif; /* Changed font family */
+  color: #333; /* Changed font color */
+  font-size: 16px; /* Changed font size */
+}
+
+.softwareEntry {
+  position: relative;
+  opacity: 1; /* Ensure it's fully visible */
+  visibility: visible; /* Ensure it's visible */
+  transition: opacity 0.3s ease-in-out; /* Add fade transition */
+}
+
+.softwareThumbnail {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-top-left-radius: 8px; /* Adjusted border radius of the image */
+  border-top-right-radius: 8px; /* Adjusted border radius of the image */
+}
+
+.softwareDetails {
+  padding: 15px; /* Increased padding for better spacing */
+}
+
+.entryBadge {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  background-color: #216567;
+  color: #f9f9f9;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 15px;
+  font-family: 'Cabin', sans-serif; /* Changed font family */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added box shadow for depth */
+}

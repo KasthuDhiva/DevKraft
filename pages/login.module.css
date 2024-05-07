@@ -1,0 +1,74 @@
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fbf4d5; /* Pearl Lusta */
+}
+
+.loginForm {
+  background-color: #216567; /* Green Pea */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginTitle {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.loginEmailInput,
+.loginPasswordInput {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #e2bfd1; /* Melanie */
+  color: #216567; /* Green Pea */
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+.loginButton {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #94d3c3; /* Sinbad */
+  color: #fbf4d5; /* Pearl Lusta */
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.loginButton:hover {
+  background-color: #7acdd5; /* Saffron */
+}
+
+.loginLinks {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.loginLinks p {
+  margin-bottom: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.loginLinks p:hover {
+  color: #fabc37; /* Charm */
+}
+
+.errorMessage {
+  color: red;
+  margin-bottom: 10px;
+  text-align: center;
+}

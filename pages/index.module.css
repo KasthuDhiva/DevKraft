@@ -1,0 +1,647 @@
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #FBF9EF; /* Light gray background for the whole page */
+  margin: 0; /* Reset the margin for the entire page */
+  padding: 0; /* Reset the padding for the entire page */
+  max-width: 100%; /* Set maximum width to prevent horizontal scrolling */
+  overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.container {
+    display: flex; /* Allow flexbox for potential future layout changes */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 1430px;
+ /* Ensure full viewport height */
+  }
+  /* Hero content styles */
+
+  .heroContainer {
+    margin-top: 50px;
+    color: #FBF9EF;
+    width: 100%;
+    height: 330px;
+    display: flex;
+    align-items: center;
+    padding: 96px 80px;
+    flex-direction: column;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    position: relative;
+    background-size: cover;
+    background-image: url("/home-700h.jpg");
+  }
+
+  .homeHeroHeading {
+    top: 150px;
+    left: 155px;
+    color: rgb(17, 139, 140);
+    position: absolute;
+    font-size: 44px;
+    max-width: 3000px;
+    font-style: italic;
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    line-height: 150%;
+    animation-name: slideInUp;
+    text-transform: capitalize;
+    animation-delay: 0s;
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+  }
+  .homeBtnGroup {
+    gap: 24px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+  }
+  .heroButton1 {
+    top: 220px;
+    left: -620px;
+    position: absolute;
+    font-size: 24px;
+    text-decoration: none;
+    animation-name: slideInUp;
+    animation-delay: 0s;
+    background-color: #118b8c;
+    animation-duration: 500ms;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    color: #FBF9EF;
+    transition: 0.3s;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    border-radius: 48px;
+    border: 0;
+    padding: 24px;
+  }
+  .heroButton1:hover {
+    color: #ffffff;
+    background-color: #000000;
+  }
+  .heroButton2 {
+    top: 223px;
+    left: -350px;
+    color: rgb(17, 139, 140);
+    text-decoration: none;
+    position: absolute;
+    font-size: 24px;
+    animation-name: slideInUp;
+    animation-delay: 0s;
+    background-color: #D9D9D9;
+    animation-duration: 500ms;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    color: rgb(17, 139, 140);
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    border-radius: 48px;
+    padding: 24px;
+    border: 0;
+  }
+  .heroButton2:hover {
+    color: #000000;
+    background-color: transparent;
+  }
+/* Hackathon content styles */
+
+.homeBanner {
+  color: #FBF9EF;
+  width: 1350px;
+  height: 330px;
+  display: flex;
+  align-items: center;
+  padding: 96px 80px;
+  flex-direction: column;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  overflow-x: hidden;
+  position: relative;
+  background-size: cover;
+  background-image: url("/half-600h.jpg");
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* To horizontally center the content inside .homeBanner */
+.homeBanner > * {
+  margin: 80px;
+}
+
+/* For the animation, I assume that the 'slideInUp' animation is already defined in a separate CSS file.
+   If not, you can define it using keyframes in CSS. */
+
+.bannerHeading {
+  color: #d36a4f;
+  font-size: 3.5em;
+  margin: 0;
+  font-family: 'Cabin', sans-serif;
+  text-align: center;
+  animation: slideInUp 1000ms ease 0s 1 normal;
+  margin-top: 20px;
+}
+
+.bannerButton {
+  text-decoration: none;
+  background-color: #d36a4f;
+  color: #FBF9EF;
+  transition: 0.3s;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-family: 'Cabin', sans-serif;
+  font-weight: bold;
+  border-radius: 48px;
+  border: 0;
+  animation: slideInUp 1000ms ease 0s 1 normal;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.bannerButton:hover {
+  background-color: #100f0f;
+}
+/* feature styles */
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px; /* Reset the margin for the entire page */
+  padding: 4rem 0; /* Top and bottom padding */
+  background-color: #d36a4f; /* Dark red background for the section */
+  border-radius: 10px; /* Rounded corners for the section */
+  width: 100%; /* Ensure full width */
+}
+.container1{
+  text-align: center;
+}
+.features1 {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  flex-direction: column;
+  gap: 2rem; /* Gap between cards (increased for spacing) */
+  margin: 0 auto; /* Center the section horizontally */
+  max-width: 1200px; /* Limiting max width */
+}
+.featureText,
+.featuresHeading,
+.featureSubHeading {
+  color: #fde8bb;
+  text-align: center; /* Center align the text */
+  font-family: "Cabin", sans-serif; /* Apply font family */
+}
+.featuresHeading {
+  font-size: 36px;
+  margin-bottom: 20px; /* Add margin bottom */
+}
+
+.featureText {
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.featureSubHeading {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.container2{
+  display: grid;
+  grid-template-columns: 2fr 2fr; 
+  gap: 36px;
+   /* Make the card a flex container for vertical centering */
+  align-items: center; 
+}
+.cardLink {
+  text-decoration: none;
+}
+.featureCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #fde8bb;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 600px;
+}
+
+.featureCard:hover {
+  transform: scale(1.03); /* Slightly larger on hover */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.icon {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.featureIcon {
+  width: 100px;
+  height: 100px;
+  fill: rgb(17, 139, 140);
+  animation: spin 3s linear infinite;
+}
+
+.container3 {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cardText {
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(17, 139, 140);
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Cabin',sans-serif;
+}
+
+.descText {
+  font-size: 24px;
+  color: rgb(17, 139, 140);
+  margin-bottom: 10px;
+  font-family: 'Cabin',sans-serif;
+  text-align: center;
+}
+/*Top Hackathon styles*/
+.topHackathons {
+  flex: 0 0 auto;
+  width: 1010px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  justify-content: center;
+}
+.topBanner {
+  height: 340px;
+  background-color: #fde8bb;
+  border: 20px solid #d36a4f;
+  color: #FBF9EF;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 80px;
+  border-radius: 50px;
+  flex-direction: column;
+}
+.topBanner:hover {
+  transform: scale(1.03); /* Slightly larger on hover */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+.topHeading1 {
+  color: #216567;
+  font-size: 3em;
+  font-style: normal;
+  text-align: center;
+  font-weight: 900;
+  font-family: 'Cabin', sans-serif;
+  margin-bottom: 20px;
+  animation-name: slideInUp;
+  animation-delay: 0s;
+  animation-duration: 1000ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+.topHeading2 {
+  color: #216567;
+  margin-bottom: 40px;
+  font-style: normal;
+  text-align: center;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 1.8em;
+  animation-name: slideInUp;
+  animation-delay: 0s;
+  animation-duration: 1000ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+.bannerButton1 {
+  animation-name: slideInUp;
+  animation-delay: 0s;
+  background-color: #216567;
+  animation-duration: 1000ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  color: #FBF9EF;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: 'Cabin',sans-serif;
+  font-weight: bold;
+  padding: 24px;
+  border-radius: 48px;
+  border: 0;
+}
+.topText {
+  font-size: 24px;
+  padding: 24px;
+}
+.bannerButton1:hover {
+  background-color: #000000;
+}
+
+/*Preference Styles*/
+.preference {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.preference2 {
+  height: 350px;
+  background-color: transparent;
+  color: #FBF9EF;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 96px 80px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.preferenceHeading {
+  color: #d36a4f;
+  font-size: 3em;
+  font-style: normal;
+  text-align: center;
+  font-weight: 900;
+  font-family: 'Cabin', sans-serif;
+  animation-name: slideInUp;
+  animation-delay: 0s;
+  animation-duration: 1000ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+.preferenceContainer {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.prefHeading {
+  color: #d36a4f;
+  margin: var(--dl-space-space-oneandhalfunits);
+  font-style: normal;
+  text-align: center;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  animation-name: slideInUp;
+  animation-delay: 0s;
+  animation-duration: 1000ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+.prefText {
+  text-align: center;
+  animation-name: slideInUp;
+  animation-delay: 0s;
+  animation-duration: 1000ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+.prefButtonGrp{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 80px;
+}
+.prefButton {
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Cabin', sans-serif;
+  background-color: rgb(211, 106, 79);
+  display: inline-block;
+  padding: 36px 72px;
+  border-radius: 4px;
+  border: 0;
+  color: #FBF9EF;
+  transition: 0.3s;
+  font-family: 'Cabin',sans-serif;
+  font-weight: bold;
+  border-radius: 48px;
+}
+.prefButton:hover {
+  background-color: #000000;
+  color: #FBF9EF;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*Themes Styles*/
+.themes {
+  background-color: transparent;
+  color: #FBF9EF;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 96px 80px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.themesHead1 {
+  color: rgb(211, 106, 79);
+  font-size: 3em;
+  font-style: normal;
+  font-family: 'Cabin',sans-serif;
+  text-align: center;
+  font-weight: 900;
+  animation-name: slideInUp;
+  animation-delay: 0s;
+  animation-duration: 1000ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+.themesHead2 {
+  color:rgb(211, 106, 79);
+  margin: var(--dl-space-space-oneandhalfunits);
+  font-style: normal;
+  text-align: center;
+  font-family: 'Cabin',sans-serif;
+  font-weight: 400;
+  animation-name: slideInUp;
+  animation-delay: 0s;
+  animation-duration: 1000ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+.themesSubhead {
+  max-width: 1400px;
+  margin: 32px 0;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Cabin',sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+}
+.themesButton {
+  animation-name: slideInUp;
+  animation-delay: 0s;
+  text-decoration: none;
+  background-color:rgb(211, 106, 79);
+  animation-duration: 1000ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  color: #FBF9EF;
+  transition: 0.3s;
+  font-family: 'Cabin',sans-serif;
+  font-weight: bold;
+  padding: 24px 48px;
+  border-radius: 48px;
+}
+.themesText {
+  font-size: 24px;
+}
+.themesButton:hover {
+  background-color: #000000;
+}
+/*FAQ styles*/
+.faq {
+  flex: 0 0 auto;
+  width: 80%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+.faqMain {
+  height: auto;
+  background-color: #FBF9EF;
+  flex: 0 0 auto;
+  color: #FBF9EF;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.faq1 {
+  gap: 32px;
+  width: 100%;
+  display: flex;
+  max-width: 1400px;
+  align-items: flex-start;
+  padding: 64px 48px;
+  flex-direction: row;
+  background-color: #fff1d6;
+  border-radius: 10px;
+}
+.faq2 {
+  display: flex;
+  max-width: 35%;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.faqHead1 {
+  font-size: 16px;
+  font-family: "Cabin",sans-serif;
+  font-weight: 700;
+  line-height: 150%;
+  animation-name: slideInUp;
+  text-transform: uppercase;
+  animation-delay: 0s;
+  animation-duration: 0ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: step-start;
+  color: #d36a4f;
+}
+
+.faqHead2 {
+  color: #d36a4f;
+  font-size: 35px;
+  font-family: "Cabin",sans-serif;
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: 24px;
+  animation-name: none;
+  animation-delay: 0s;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+.faqText {
+  text-align: left;
+  animation-name: none;
+  font-family: "Cabin",sans-serif;
+  animation-delay: 0s;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  color: #d36a4f;
+}
+.faqContainer {
+  gap: 24px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.faqCont {
+  gap: 8px;
+  flex: 1;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.faqSubhead {
+  color: #d36a4f;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Cabin',sans-serif;
+  line-height: 150%;
+}
+.faqSubtext {
+  color: #d36a4f;
+  font-size: 16px;
+  font-family: 'Cabin',sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+ 
+  

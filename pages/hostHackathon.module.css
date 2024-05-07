@@ -1,0 +1,223 @@
+/* hostHackathons.module.css */
+
+.bodyContainer {
+    padding: 20px;
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .projectContainer {
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  
+  .toggleFormBtn {
+    font-family: 'Cabin', sans-serif;
+    margin: 50px 0;
+    background-color: #d36a4f; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 15px 30px; /* Button padding */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Button border radius */
+    cursor: pointer; /* Cursor style on hover */
+    font-size: 20px; /* Button font size */
+    font-weight: 700;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Button box shadow */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .toggleFormBtn:hover {
+    background-color: #ae4429;  /* Button background color on hover */
+  }
+
+  .addHackathonFormContainer {
+    font-family: 'Cabin', sans-serif;
+    display: flex;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .addHackathonForm {
+  margin-top: 20px;
+  width: 500px;
+  background-color: #fef8ec; /* Change background color to white */
+  border-radius: 10px; /* Increase border radius for a smoother look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  padding: 30px; /* Increase padding for better spacing */
+  }
+  
+  .addHackathonForm h2 {
+    margin-bottom: 20px; /* Increase margin for better separation */
+    color: #216567; /* Change text color to a darker shade */
+  }
+  
+  .addHackathonForm label {
+    display: block;
+    margin-bottom: 15px; /* Increase margin for better spacing */
+    color:#216567; /* Change label color to a lighter shade */
+  }
+  
+  .addHackathonForm input[type="text"],
+  .addHackathonForm input[type="file"] {
+    width: 100%;
+    padding: 12px; /* Increase padding for better input appearance */
+    border: 1px solid #ddd; /* Change border color to a lighter shade */
+    border-radius: 6px; /* Increase border radius for smoother edges */
+    box-sizing: border-box;
+    margin: 20px 0; /* Increase margin for better spacing */
+  }
+  
+  .addHackathonForm button[type="submit"] {
+    background-color:  #ae4429;
+    color: #fff;
+    padding: 14px 24px; /* Increase padding for better button appearance */
+    border: none;
+    border-radius: 6px; /* Increase border radius for smoother edges */
+    cursor: pointer;
+    font-size: 18px; 
+    font-weight: 700;/* Increase font size for better readability */
+    transition: background-color 0.3s ease; /* Add smooth transition */
+  }
+  
+  .addHackathonForm button[type="submit"]:hover {
+    background-color:  #d36a4f;
+  }
+  
+  /* Add more styles as needed */
+  .hackathonTitle {
+    font-family: 'Cabin', sans-serif;
+    color:  #ae4429;
+  }
+
+  .galleryItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .hackathonEntry {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: 4px 4px 10px 0px rgba(18, 18, 18, 0.1);
+  }
+  
+  .hackathonThumbnail {
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+    border: 4px rgb(246, 246, 246) solid;
+  }
+  
+  .hackathonDetails {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 20px;
+    flex-direction: column;
+    width: 950px;
+  }
+  .hackathonName {
+    padding-left: 10px;
+    font-size: 1.8em;
+    margin: 0;
+    margin-bottom: 30px;
+    font-family: 'Cabin', sans-serif;
+  }
+  
+  .detailsRow {
+    display: flex;
+    flex-wrap: wrap;
+   
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .detailsRow1 {
+    display: flex;
+    align-items: flex-start;
+   
+    font-family: 'Cabin', sans-serif;
+    
+  }
+  .detailsColumn1 {
+    display: flex;
+    flex: 1 1 25%;
+    align-items: flex-start;
+    font-family: 'Cabin', sans-serif;
+    flex-direction: column;
+  }
+  .hackathonElement {
+    margin-bottom: 20px;
+    color: #595959;
+  }
+  .hackathonLocation {
+    margin-bottom: 20px;
+    color: #595959;
+    margin-bottom: 40px;
+  }
+  .hackathonTimeLeft {
+    color: #fff;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: #105849 1px solid;
+    border-radius: 20px;
+    background-color: #105849;
+    margin-bottom: 50px;
+    margin-top: 0;
+  }
+  .hackathonPrizes {
+    margin-bottom: 20px;
+    color: #595959;
+    margin-top: 70px;
+  }
+  .hackathonParticipants {
+    margin-bottom: 50px;
+    color: #595959;
+    margin-top: 85px;
+  }
+  .hackathonTag {
+    background-color: rgba(133, 220, 255, 0.2);
+    color: #0074F0;
+    margin-top: 5px;
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+  .hackathonSponsor {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #0074F0;
+    border: 1px solid #0074F0;
+    border-radius: 15px;
+    padding: 10px 20px;
+  }
+  .icon {
+    padding: 10px;
+    width: 24px;
+    height: 24px;
+  }
+  /* Optional: Media Queries for Responsiveness */
+  @media screen and (max-width: 992px) {
+    /* Adjust gallery item width for medium screens (optional) */
+    .galleryItem {
+      width: calc(50% - 20px); /* 2 columns for medium screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    /* Adjust gallery item width for extra small screens */
+    .galleryItem {
+      width: 100%; /* Stack columns on extra small screens */
+    }
+  }
+  

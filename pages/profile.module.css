@@ -1,0 +1,78 @@
+/* Profile Page Styles */
+
+.profileContainer {
+  max-width: 800px;
+  margin: 100px;
+  padding: 20px;
+}
+
+.profileHeader {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif; /* Consider using a visually appealing font */
+}
+
+.projectsHeader {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: 'Open Sans', sans-serif; /* Consider using a visually appealing font */
+}
+
+/* Grid layout for projects (optional) */
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+/* Updated styles */
+.galleryItem {
+  background-color: #fff; /* Changed background color */
+  border: 1px solid #eee; /* Adjusted border color */
+  border-radius: 8px; /* Increased border radius */
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added box shadow for depth */
+}
+
+.galleryItem:hover {
+  transform: translateY(-5px);
+}
+
+.blockWrapperLink {
+  text-decoration: none;
+  font-family: 'Cabin', sans-serif; /* Changed font family */
+  color: #333; /* Changed font color */
+  font-size: 16px; /* Changed font size */
+}
+
+.softwareEntry {
+  position: relative;
+  opacity: 1; /* Ensure it's fully visible */
+  visibility: visible; /* Ensure it's visible */
+  transition: opacity 0.3s ease-in-out; /* Add fade transition */
+}
+
+.softwareThumbnail {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-top-left-radius: 8px; /* Adjusted border radius of the image */
+  border-top-right-radius: 8px; /* Adjusted border radius of the image */
+}
+
+.softwareDetails {
+  padding: 15px; /* Increased padding for better spacing */
+}
+
+.entryBadge {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  background-color: #216567;
+  color: #f9f9f9;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 15px;
+  font-family: 'Cabin', sans-serif; /* Changed font family */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added box shadow for depth */
+}
