@@ -22,7 +22,7 @@ ENV NEXT_PUBLIC_FIREBASE_API_KEY="AIzaSyCPAZhgtCK_x6B3wj53xLPaEExUrNHBGRw" \
     NEXT_PUBLIC_FIREBASE_APP_ID="1:904428900007:web:a06cfdbc00af3102df1582"
 	
 # Expose port (if needed)
-EXPOSE 1213
+EXPOSE 3000
 
 # Command to run the application
 CMD ["npm", "run", "dev"]
